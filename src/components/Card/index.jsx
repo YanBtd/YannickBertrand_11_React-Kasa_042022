@@ -1,5 +1,3 @@
-// import PropTypes from 'prop-types';
-// import DefaultPicture from '../../assets/imgTest.png';
 import styled from 'styled-components';
 
 const CardWrapper = styled.article`
@@ -10,10 +8,6 @@ const CardWrapper = styled.article`
     //width: 340px;
     height: 340px;
     border-radius: 10px;
-
-    // @media screen and (max-width: 1068px) {
-    //     width: 100%;
-    // }
 `;
 const CardImage = styled.img`
     height: 100%;
@@ -32,10 +26,13 @@ const CardTitle = styled.span`
     font-weight: bold;
     font-size: 1rem;
     position: absolute;
-    // bottom: 0;
     margin-left: 10px;
     margin-bottom: 10px;
     width: 280px;
+
+    @media screen and (max-width: 400px) {
+        width: 260px;
+    }
 `;
 
 function Card({ logement }) {
@@ -51,26 +48,4 @@ function Card({ logement }) {
     );
 }
 
-// function Card({ logement }) {
-//     return (
-//         <article
-//             style={{ display: 'flex', flexDirection: 'column', padding: 15 }}
-//         >
-//             <span>{logement.title}</span>
-//             <img src={logement.cover} alt="logement" height={340} width={340} />
-//         </article>
-//     );
-// }
-
-// Card.propTypes = {
-//     label: PropTypes.string.isRequired,
-//     title: PropTypes.string.isRequired,
-//     picture: PropTypes.string.isRequired,
-// };
-
-// Card.defaultProps = {
-//     label: '',
-//     title: '',
-//     // picture: DefaultPicture,
-// };
 export default Card;

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import logements from '../../dataKasa/logements.json';
 import Carrousel from '../../components/Carrousel';
@@ -9,14 +8,14 @@ import Dropdown from '../../components/Dropdown';
 import styled from 'styled-components';
 
 const LogementContainer = styled.div`
-    background-color: aquamarine;
+    // background-color: aquamarine;
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 40px;
     min-height: 100vh;
 `;
 const LogementWrapper = styled.section`
-    background-color: black;
+    // background-color: black;
     display: flex;
     flex-direction: column;
     // width: 100%;
@@ -38,21 +37,21 @@ const LogementInfos = styled.div`
     }
 `;
 const LogementTitre = styled.span`
-    background-color: pink;
+    // background-color: pink;
     color: #ff6060;
     font-size: 1.5rem;
 `;
 const LogementLocation = styled.span`
-    background-color: yellowgreen;
+    // background-color: yellowgreen;
     color: #ff6060;
     font-size: 1rem;
     margin-bottom: 2%;
 `;
 const LogementTags = styled.div`
-    background-color: yellow;
+    // background-color: yellow;
 `;
 const HostWrapper = styled.div`
-    background-color: blue;
+    // background-color: blue;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -98,7 +97,7 @@ const Etoile = styled.img`
     width: 30px;
 `;
 const DescAndEquipts = styled.div`
-    background-color: orange;
+    // background-color: orange;
     margin-top: 20px;
     display: flex;
     flex-direction: column;

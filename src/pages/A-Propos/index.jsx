@@ -3,11 +3,6 @@ import styled from 'styled-components';
 import Dropdown from '../../components/Dropdown';
 
 const AProposContainer = styled.div`
-    // background-color: yellow;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // display: block;
     padding-left: 5%;
     padding-right: 5%;
     min-height: 100vh;

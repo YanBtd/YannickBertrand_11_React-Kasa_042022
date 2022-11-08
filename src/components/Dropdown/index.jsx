@@ -6,7 +6,6 @@ const DropdownWrapper = styled.div`
     // background-color: aquamarine;
     border-radius: 5px;
     margin-bottom: 35px;
-    width: 100%;
 
     &:hover {
         cursor: pointer;
@@ -81,7 +80,6 @@ function Dropdown({ fullWidth, titre, description }) {
                 <DropdownTitle>{titre}</DropdownTitle>
                 <DropdownLink
                     className={`${dropdown}`}
-                    /*href={`#dropdown-${titre}`}*/
                     onClick={() => setDropdown(!dropdown)}
                 >
                     <DropdownImage src={fleche} alt="Ouvrir cette liste" />
@@ -89,7 +87,6 @@ function Dropdown({ fullWidth, titre, description }) {
             </DropdownHeader>
             {
                 /* Quand le state est à TRUE alors on affiche la description */
-                // dropdown && <DropdownContent>{description}</DropdownContent>
                 <DropdownContent className={dropdown ? 'show' : ''}>
                     {description}
                 </DropdownContent>
